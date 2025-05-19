@@ -1,73 +1,153 @@
-<style>
-  body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #000;
-    color: #EEEEEE;
-  }
-  .container {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .intro {
-    background-color: #222;
-    margin-bottom: 20px;
-    padding: 20px 20px 20px 40px; /* left padding lessened */
-    border-radius: 10px;
-    text-align: center;
-    width: 100%;
-    box-sizing: border-box;
-  }
-  h1, h2, h3 {
-    color: #EEEEEE;
-    margin-top: 0;
-  }
-  .content-wrapper {
-    display: flex;
-    width: 100%;
-    max-width: 900px;
-    gap: 20px;
-  }
-  .left-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    flex-grow: 1;
-  }
-  .section {
-    background-color: #222;
-    padding: 20px;
-    border-radius: 10px;
-  }
-  .section ul,
-  .intro ul {
-    padding-left: 20px; /* reduced padding for bullets */
-    margin-left: 0;
-  }
-  .section.small {
-    grid-column: span 1;
-  }
-  .section.medium {
-    grid-column: span 2;
-  }
-  .age13 {
-    background-color: #222;
-    padding: 20px;
-    border-radius: 10px;
-    width: 600px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-  }
-  footer {
-    text-align: center;
-    margin-top: 40px;
-    color: #888;
-    font-size: 14px;
-    width: 100%;
-  }
-</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pranav Pradhan | Tech Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #000;
+      color: #EEEEEE;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .intro {
+      background-color: #222;
+      margin-bottom: 20px;
+      padding: 20px 20px 20px 40px; /* less left padding */
+      border-radius: 10px;
+      text-align: center;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    h1, h2, h3 {
+      color: #EEEEEE;
+      margin-top: 0;
+    }
+    .content-wrapper {
+      display: flex;
+      width: 100%;
+      max-width: 900px;
+      gap: 20px;
+    }
+    .left-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      flex-grow: 1;
+    }
+    .section {
+      background-color: #222;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    .section ul,
+    .intro ul {
+      padding-left: 20px; /* bullet points closer to left */
+      margin-left: 0;
+    }
+    .section.small {
+      grid-column: span 1;
+    }
+    .section.medium {
+      grid-column: span 2;
+    }
+    .age13 {
+      background-color: #222;
+      padding: 20px;
+      border-radius: 10px;
+      width: 600px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      color: #888;
+      font-size: 14px;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="intro">
+      <h1>Hi, I'm Pranav</h1>
+      <p>I'm a 13-year-old tech prodigy passionate about virtualization, OS installations, and disk partitioning. I've aspired to build a career in IT since I was 6. This blog is where I document my journey and projects.</p>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="left-grid">
+        <div class="section small">
+          <h2>Age 9</h2>
+          <ul>
+            <li>Installed Kali Linux — my first OS install.</li>
+            <li>First VM created and used: Kali Linux using VirtualBox.</li>
+            <li>Performed dictionary attack on NAS using Hydra in Kali Linux.</li>
+          </ul>
+        </div>
+
+        <div class="section small">
+          <h2>Age 10</h2>
+          <ul>
+            <li>Created first Ubuntu VM.</li>
+            <li>Flashed BIOS on Acer Aspire 5750 using a USB drive.</li>
+          </ul>
+        </div>
+
+        <div class="section medium">
+          <h2>Age 11</h2>
+          <ul>
+            <li>First dual boot: Windows 10 and Ubuntu with manual partitioning.</li>
+            <li>Used Hyper-V to create and manage virtual machines.</li>
+            <li>Configured a SOHO router and enabled MAC filtering.</li>
+            <li>Edited Windows 11 registry to bypass CPU restrictions and install it on a Sandy Bridge i3-2350M laptop.</li>
+            <li>Jailbroke iPad Mini on iOS 9.3.5.</li>
+            <li>Backed up and restored iPad Mini (iOS 9.3.5).</li>
+          </ul>
+        </div>
+
+        <div class="section medium">
+          <h2>Age 12</h2>
+          <ul>
+            <li>Set up RPiPlay on a Raspberry Pi 3 for screen mirroring, linked to Balena Cloud.</li>
+            <li>Backed up and restored Samsung Galaxy phone.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="age13">
+        <h2>Age 13</h2>
+        <ul>
+          <li>Built a multi-boot system with Windows 10, Windows 11, Ubuntu, Fedora, and Kali Linux.</li>
+          <li>Configured Arch Linux entirely through terminal using Arch Wiki, fdisk, nano, vi, and networking commands.</li>
+          <li>Used VMware Workstation Pro, VMware Player, and GNOME Boxes.</li>
+          <li>Installed VMware ESXi.</li>
+          <li>Created a VM lab with 20+ virtual machines.</li>
+          <li>Cloned VMs, created snapshots, used NAT and bridged networking.</li>
+          <li>Worked with partition tools: DISKPART, GParted, Windows Disk Management, GNOME Disks, Minitool Partition Wizard.</li>
+          <li>Handled file systems: NTFS, FAT32, exFAT, APFS, EXT4, swap.</li>
+          <li>Recovered photos from a Windows laptop in recovery.</li>
+          <li>Reinstalled OSes, removed installed apps.</li>
+          <li>Rescued Windows Recovery Environment (WinRE).</li>
+          <li>Set static IP on Arch Linux.</li>
+          <li>Explored Zenmap (network scanning).</li>
+        </ul>
+      </div>
+    </div>
+
+    <footer>
+      <p>HTML structure by ChatGPT, design and content by Pranav.</p>
+    </footer>
+  </div>
+</body>
+</html>
