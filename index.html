@@ -12,131 +12,168 @@
       color: #fff;
     }
     .container {
-      max-width: 1100px;
+      max-width: 1000px;
       margin: 0 auto;
       padding: 20px;
-      display: flex;
-      gap: 20px;
     }
     .intro {
       background-color: #222;
       margin-bottom: 20px;
       padding: 20px;
       border-radius: 10px;
-      max-width: 1000px;
+      text-align: center; /* center the about me text */
     }
     h1, h2, h3 {
       color: #fff;
       margin-top: 0;
     }
-    /* Left side grid for ages 9-12 */
-    .left-grid {
+    .grid-wrapper {
+      display: flex;
+      gap: 20px;
+    }
+    .grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-auto-rows: min-content;
       gap: 20px;
-      flex: 2;
+      flex: 1 1 0;
     }
+    /* The small blocks for ages 9,10,11,12 */
     .section {
       background-color: #222;
       padding: 20px;
       border-radius: 10px;
     }
-    /* Right vertical bar for age 13 */
-    .right-vertical {
-      flex: 1;
+    /* Each small block takes one column */
+    .section.small {
+      grid-column: span 1;
+    }
+    /* Medium blocks span two columns */
+    .section.medium {
+      grid-column: span 2;
+    }
+    /* Age 13 vertical panel on the right */
+    .age13 {
       background-color: #222;
-      border-radius: 10px;
       padding: 20px;
+      border-radius: 10px;
+      width: 300px;
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
+      /* Make height same as left grid */
     }
-    .section ul {
-      padding-left: 20px;
+    /* We'll set container height and sync it */
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
-    .section ul li {
-      margin-bottom: 10px;
+    .content-wrapper {
+      display: flex;
+      width: 100%;
+      max-width: 1000px;
+      gap: 20px;
+    }
+    .left-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      flex-grow: 1;
     }
     footer {
       text-align: center;
       margin-top: 40px;
       color: #888;
       font-size: 14px;
-      max-width: 1000px;
-      margin-left: auto;
-      margin-right: auto;
+      width: 100%;
     }
   </style>
 </head>
 <body>
-  <div class="intro">
-    <h1>Hi, I'm Pranav</h1>
-    <p>I'm a 13-year-old tech prodigy passionate about virtualization, OS installations, and disk partitioning. I've aspired to build a career in IT since I was 6. This blog is where I document my journey and projects.</p>
-  </div>
-
   <div class="container">
-    <div class="left-grid">
-      <div class="section">
-        <h2>Age 9</h2>
-        <ul>
-          <li>Installed Kali Linux — my first OS install.</li>
-          <li>First VM created and used: Kali Linux using VirtualBox.</li>
-          <li>Performed dictionary attack on NAS using Hydra in Kali Linux.</li>
-        </ul>
+    <div class="intro">
+      <h1>Hi, I'm Pranav</h1>
+      <p>I'm a 13-year-old tech prodigy passionate about virtualization, OS installations, and disk partitioning. I've aspired to build a career in IT since I was 6. This blog is where I document my journey and projects.</p>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="left-grid" id="leftGrid">
+        <div class="section small">
+          <h2>Age 9</h2>
+          <ul>
+            <li>Installed Kali Linux — my first OS install.</li>
+            <li>First VM created and used: Kali Linux using VirtualBox.</li>
+            <li>Performed dictionary attack on NAS using Hydra in Kali Linux.</li>
+          </ul>
+        </div>
+
+        <div class="section small">
+          <h2>Age 10</h2>
+          <ul>
+            <li>Created first Ubuntu VM.</li>
+            <li>Flashed BIOS on Acer Aspire 5750 using a USB drive.</li>
+          </ul>
+        </div>
+
+        <div class="section medium">
+          <h2>Age 11</h2>
+          <ul>
+            <li>First dual boot: Windows 10 and Ubuntu with manual partitioning.</li>
+            <li>Used Hyper-V to create and manage virtual machines.</li>
+            <li>Configured a SOHO router and enabled MAC filtering.</li>
+            <li>Edited Windows 11 registry to bypass CPU restrictions and install it on a Sandy Bridge i3-2350M laptop.</li>
+            <li>Jailbroke iPad Mini on iOS 9.3.5.</li>
+            <li>Backed up and restored iPad Mini (iOS 9.3.5).</li>
+          </ul>
+        </div>
+
+        <div class="section medium">
+          <h2>Age 12</h2>
+          <ul>
+            <li>Set up RPiPlay on a Raspberry Pi 3 for screen mirroring, linked to Balena Cloud.</li>
+            <li>Backed up and restored Samsung Galaxy phone.</li>
+          </ul>
+        </div>
       </div>
 
-      <div class="section">
-        <h2>Age 10</h2>
+      <div class="age13" id="age13Section">
+        <h2>Age 13</h2>
         <ul>
-          <li>Created first Ubuntu VM.</li>
-          <li>Flashed BIOS on Acer Aspire 5750 using a USB drive.</li>
-        </ul>
-      </div>
-
-      <div class="section">
-        <h2>Age 11</h2>
-        <ul>
-          <li>First dual boot: Windows 10 and Ubuntu with manual partitioning.</li>
-          <li>Used Hyper-V to create and manage virtual machines.</li>
-          <li>Configured a SOHO router and enabled MAC filtering.</li>
-          <li>Edited Windows 11 registry to bypass CPU restrictions and install it on a Sandy Bridge i3-2350M laptop.</li>
-          <li>Jailbroke iPad Mini on iOS 9.3.5.</li>
-          <li>Backed up and restored iPad Mini (iOS 9.3.5).</li>
-        </ul>
-      </div>
-
-      <div class="section">
-        <h2>Age 12</h2>
-        <ul>
-          <li>Set up RPiPlay on a Raspberry Pi 3 for screen mirroring, linked to Balena Cloud.</li>
-          <li>Backed up and restored Samsung Galaxy phone.</li>
+          <li>Built a multi-boot system with Windows 10, Windows 11, Ubuntu, Fedora, and Kali Linux.</li>
+          <li>Configured Arch Linux entirely through terminal using Arch Wiki, fdisk, nano, vi, and networking commands.</li>
+          <li>Used VMware Workstation Pro, VMware Player, and GNOME Boxes.</li>
+          <li>Installed and explored ESXi.</li>
+          <li>Created a VM lab with 20+ virtual machines.</li>
+          <li>Cloned VMs, created snapshots, used NAT and bridged networking.</li>
+          <li>Worked with partition tools: DISKPART, GParted, Windows Disk Management, GNOME Disks, Minitool Partition Wizard.</li>
+          <li>Handled file systems: NTFS, FAT32, exFAT, APFS, EXT4, swap.</li>
+          <li>Recovered photos from a Windows laptop using recovery tools.</li>
+          <li>Reinstalled OSes, removed preinstalled apps.</li>
+          <li>Rescued Windows Recovery Environment (WinRE).</li>
+          <li>Set static IP on Arch Linux.</li>
+          <li>Explored Zenmap (network scanning).</li>
         </ul>
       </div>
     </div>
 
-    <div class="right-vertical section">
-      <h2>Age 13</h2>
-      <ul>
-        <li>Built a multi-boot system with Windows 10, Windows 11, Ubuntu, Fedora, and Kali Linux.</li>
-        <li>Configured Arch Linux entirely through terminal using Arch Wiki, fdisk, nano, vi, and networking commands.</li>
-        <li>Used VMware Workstation Pro, VMware Player, and GNOME Boxes.</li>
-        <li>Installed and explored ESXi.</li>
-        <li>Created a VM lab with 20+ virtual machines.</li>
-        <li>Cloned VMs, created snapshots, used NAT and bridged networking.</li>
-        <li>Worked with partition tools: DISKPART, GParted, Windows Disk Management, GNOME Disks, Minitool Partition Wizard.</li>
-        <li>Handled file systems: NTFS, FAT32, exFAT, APFS, EXT4, swap.</li>
-        <li>Recovered photos from a Windows laptop using recovery tools.</li>
-        <li>Reinstalled OSes, removed preinstalled apps.</li>
-        <li>Rescued Windows Recovery Environment (WinRE).</li>
-        <li>Set static IP on Arch Linux.</li>
-        <li>Explored Zenmap (network scanning).</li>
-      </ul>
-    </div>
+    <footer>
+      <p>HTML structure by ChatGPT, design and content by Pranav.</p>
+    </footer>
   </div>
 
-  <footer>
-    <p>HTML structure by ChatGPT, design and content by Pranav.</p>
-  </footer>
+  <script>
+    // Sync the height of age 13 section to the height of left grid
+    function syncHeight() {
+      const leftGrid = document.getElementById('leftGrid');
+      const age13Section = document.getElementById('age13Section');
+      if (leftGrid && age13Section) {
+        const height = leftGrid.offsetHeight;
+        age13Section.style.height = height + 'px';
+      }
+    }
+    window.addEventListener('load', syncHeight);
+    window.addEventListener('resize', syncHeight);
+  </script>
 </body>
 </html>
