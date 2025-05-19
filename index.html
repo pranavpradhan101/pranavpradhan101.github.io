@@ -77,6 +77,31 @@
       font-size: 14px;
       width: 100%;
     }
+
+    /* Mobile Responsive Styles */
+    @media (max-width: 600px) {
+      .content-wrapper {
+        flex-direction: column;
+        gap: 15px;
+      }
+      .left-grid {
+        display: block;
+        width: 100%;
+      }
+      .section {
+        width: 100% !important;
+        grid-column: auto !important;
+      }
+      .age13 {
+        width: 100% !important;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      .intro {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+    }
   </style>
 </head>
 <body>
