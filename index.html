@@ -9,65 +9,27 @@
       margin: 0;
       font-family: Arial, sans-serif;
       background-color: #000;
-      color: #fff;
+      color: #DEDEDE;
     }
     .container {
       max-width: 1000px;
       margin: 0 auto;
       padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
     .intro {
       background-color: #222;
       margin-bottom: 20px;
       padding: 20px;
       border-radius: 10px;
-      text-align: center; /* center the about me text */
+      text-align: center;
+      width: 100%;
     }
     h1, h2, h3 {
-      color: #fff;
+      color: #DEDEDE;
       margin-top: 0;
-    }
-    .grid-wrapper {
-      display: flex;
-      gap: 20px;
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-auto-rows: min-content;
-      gap: 20px;
-      flex: 1 1 0;
-    }
-    /* The small blocks for ages 9,10,11,12 */
-    .section {
-      background-color: #222;
-      padding: 20px;
-      border-radius: 10px;
-    }
-    /* Each small block takes one column */
-    .section.small {
-      grid-column: span 1;
-    }
-    /* Medium blocks span two columns */
-    .section.medium {
-      grid-column: span 2;
-    }
-    /* Age 13 vertical panel on the right */
-    .age13 {
-      background-color: #222;
-      padding: 20px;
-      border-radius: 10px;
-      width: 300px;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      /* Make height same as left grid */
-    }
-    /* We'll set container height and sync it */
-    .container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
     }
     .content-wrapper {
       display: flex;
@@ -80,6 +42,26 @@
       grid-template-columns: repeat(2, 1fr);
       gap: 20px;
       flex-grow: 1;
+    }
+    .section {
+      background-color: #222;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    .section.small {
+      grid-column: span 1;
+    }
+    .section.medium {
+      grid-column: span 2;
+    }
+    .age13 {
+      background-color: #222;
+      padding: 20px;
+      border-radius: 10px;
+      width: 600px; /* wider width */
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
     }
     footer {
       text-align: center;
@@ -163,7 +145,6 @@
   </div>
 
   <script>
-    // Sync the height of age 13 section to the height of left grid
     function syncHeight() {
       const leftGrid = document.getElementById('leftGrid');
       const age13Section = document.getElementById('age13Section');
