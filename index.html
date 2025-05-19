@@ -22,7 +22,7 @@
     .intro {
       background-color: #222;
       margin-bottom: 20px;
-      padding: 20px 20px 20px 40px;
+      padding: 20px 20px 20px 40px; /* less left padding */
       border-radius: 10px;
       text-align: center;
       width: 100%;
@@ -52,7 +52,7 @@
     .section ul,
     .intro ul,
     .age13 ul {
-      padding-left: 20px;
+      padding-left: 20px; /* bullet points closer to left */
       margin-left: 0;
     }
     .section.small {
@@ -78,7 +78,7 @@
       width: 100%;
     }
 
-    /* MOBILE STYLES */
+    /* Mobile styles */
     @media (max-width: 600px) {
       .content-wrapper {
         display: block; /* stack vertically */
@@ -96,6 +96,18 @@
       }
       .age13 {
         width: 100% !important;
+      }
+      /* Center intro block and justify paragraph */
+      .intro {
+        text-align: center; /* center the intro container */
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      .intro p {
+        text-align: justify; /* justify paragraph text inside intro */
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
       }
     }
   </style>
