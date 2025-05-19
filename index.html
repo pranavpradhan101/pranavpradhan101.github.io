@@ -1,95 +1,46 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Pranav Pradhan - IT Prodigy Resume</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 20px;
-      max-width: 900px;
-      background-color: #f9f9f9;
-      color: #222;
-      line-height: 1.6;
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: #f9f9f9;
+    color: #222;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  main {
+    max-width: 900px;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin: 40px 10px;
+  }
+  header, section {
+    margin-bottom: 2rem;
+  }
+  h1, h2 {
+    color: #004080;
+    border-bottom: 2px solid #004080;
+    padding-bottom: 5px;
+  }
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  ul li {
+    margin-bottom: 0.5rem;
+  }
+  .contact-info p {
+    margin: 0.2rem 0;
+  }
+  .projects li {
+    margin-bottom: 1rem;
+  }
+  @media (max-width: 600px) {
+    main {
+      margin: 20px 10px;
+      padding: 15px;
     }
-    header, section {
-      margin-bottom: 2rem;
-    }
-    h1, h2 {
-      color: #004080;
-      border-bottom: 2px solid #004080;
-      padding-bottom: 5px;
-    }
-    ul {
-      list-style: none;
-      padding-left: 0;
-    }
-    ul li {
-      margin-bottom: 0.5rem;
-    }
-    .contact-info p {
-      margin: 0.2rem 0;
-    }
-    .projects li {
-      margin-bottom: 1rem;
-    }
-    @media (max-width: 600px) {
-      body {
-        margin: 10px;
-      }
-    }
-  </style>
-</head>
-<body>
-
-<header>
-  <h1>Pranav Pradhan</h1>
-  <h3>IT Prodigy</h3>
-  <div class="contact-info">
-    <p>✉️ <a href="mailto:pranavpradhan101@gmail.com">pranavpradhan101@gmail.com</a></p>
-    <p>📍 Calgary, AB</p>
-  </div>
-</header>
-
-<section>
-  <h2>Education</h2>
-  <p>Junior High School, 2022</p>
-</section>
-
-<section>
-  <h2>Awards & Certifications</h2>
-  <p>Working towards CompTIA A+ Certification</p>
-</section>
-
-<section>
-  <h2>Skills</h2>
-  <ul>
-    <li><strong>Virtualization:</strong> VMware Workstation Pro, Oracle VirtualBox, Hyper-V, GNOME Boxes</li>
-    <li><strong>Disk & Partition Management:</strong> Windows Disk Management, DISKPART, GNOME Disks, GParted</li>
-    <li><strong>OS Recovery & Imaging:</strong> macOS Recovery, Balena Etcher, Pi Imager, Rufus</li>
-    <li><strong>Operating Systems:</strong> Windows XP to 11, Windows Server 2012, Ubuntu, Fedora, Debian, NixOS, macOS 10.9+, FreeBSD</li>
-  </ul>
-</section>
-
-<section>
-  <h2>Profile</h2>
-  <p>I’m 13 years old and deeply passionate about IT, virtualization, and systems architecture. I’ve been working with virtual machines since I was 9 and have mastered tools like Hyper-V, VMware, and VirtualBox. I’ve built and managed complex multi-boot systems, troubleshooted real-world OS and partition issues, and helped family and friends with tech support. I enjoy learning how computers work at a deep level—whether it’s fixing bootloaders, customizing operating systems, or setting up secure and efficient environments. Currently, I’m preparing for the CompTIA A+ certification and aiming to become an IT Virtualization Architect.</p>
-</section>
-
-<section>
-  <h2>Projects</h2>
-  <ul class="projects">
-    <li><strong>Dictionary Attack against HTTP at 9:</strong> Used Hydra and a text editor on Kali Linux VM to perform a dictionary attack on my NAS.</li>
-    <li><strong>Edited Windows 11 Registry at 11:</strong> Modified registry to enable Windows 11 installation on an unsupported i3-2350M Sandy Bridge CPU.</li>
-    <li><strong>Flashed BIOS Using USB Drive at 10:</strong> Followed instructions to load BIOS file onto USB and reset CMOS.</li>
-    <li><strong>Configured SOHO Router at 11:</strong> Set SSID, password, and MAC filtering for a small office/home office router.</li>
-    <li><strong>Dual-Booted Windows and Ubuntu at 11:</strong> Manually partitioned disks to dual-boot Windows and Ubuntu Linux.</li>
-    <li><strong>RPiPlay on Raspberry Pi 3 at 12:</strong> Used GitHub code and Balena Cloud to create an Apple TV–like screen mirroring device.</li>
-    <li><strong>Multi-Boot System in VM at 13:</strong> Built a virtual machine with Windows 10 & 11, Ubuntu, Fedora, and Kali Linux.</li>
-    <li><strong>Configured Arch Linux via Terminal at 13:</strong> Installed and set up Arch Linux using terminal tools like fdisk, nano, vim, and networking commands with help from Arch Wiki.</li>
-  </ul>
-</section>
-
-</body>
-</html>
+  }
+</style>
