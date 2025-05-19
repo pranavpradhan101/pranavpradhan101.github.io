@@ -3,174 +3,140 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Pranav Pradhan - IT Prodigy Resume</title>
+  <title>Pranav Pradhan | Tech Portfolio</title>
   <style>
     body {
-      background-color: #000000;
-      color: #f0f0f0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
-      line-height: 1.6;
-      display: flex;
-      justify-content: center;
-      min-height: 100vh;
+      font-family: Arial, sans-serif;
+      background-color: #000;
+      color: #fff;
     }
-    main {
-      max-width: 900px;
-      padding: 30px 25px;
-      background: #121212;
-      box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
-      margin: 40px 10px;
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 20px;
+      display: flex;
+      gap: 20px;
+    }
+    .intro {
+      background-color: #222;
+      margin-bottom: 20px;
+      padding: 20px;
       border-radius: 10px;
+      max-width: 1000px;
+    }
+    h1, h2, h3 {
+      color: #fff;
+      margin-top: 0;
+    }
+    /* Left side grid for ages 9-12 */
+    .left-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-auto-rows: min-content;
+      gap: 20px;
+      flex: 2;
+    }
+    .section {
+      background-color: #222;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    /* Right vertical bar for age 13 */
+    .right-vertical {
+      flex: 1;
+      background-color: #222;
+      border-radius: 10px;
+      padding: 20px;
       display: flex;
       flex-direction: column;
+      justify-content: flex-start;
     }
-    header, section {
-      margin-bottom: 2.5rem;
+    .section ul {
+      padding-left: 20px;
     }
-    h1, h2 {
-      color: #ffffff;
-      border-bottom: 2px solid #ffffff;
-      padding-bottom: 6px;
-      font-weight: 700;
-    }
-    h3 {
-      color: #cccccc;
-      margin-top: 0;
-      font-weight: 500;
-    }
-    ul {
-      list-style: none;
-      padding-left: 0;
-    }
-    ul li {
-      margin-bottom: 0.8rem;
-      transition: color 0.3s ease;
-    }
-    ul li:hover {
-      color: #dddddd;
-      cursor: default;
-    }
-    .contact-info p {
-      margin: 0.3rem 0;
-      font-size: 1.05rem;
-      font-weight: 500;
-    }
-    .projects li {
-      margin-bottom: 1.2rem;
-      font-size: 1rem;
-      line-height: 1.4;
-    }
-    p {
-      font-size: 1rem;
-      color: #e0e0e0;
+    .section ul li {
+      margin-bottom: 10px;
     }
     footer {
-      margin-top: auto;
-      font-size: 0.9rem;
-      color: #777;
       text-align: center;
-      padding-top: 20px;
-      border-top: 1px solid #333;
-    }
-    @media (max-width: 600px) {
-      main {
-        margin: 20px 10px;
-        padding: 20px 15px;
-      }
+      margin-top: 40px;
+      color: #888;
+      font-size: 14px;
+      max-width: 1000px;
+      margin-left: auto;
+      margin-right: auto;
     }
   </style>
 </head>
 <body>
-  <main>
-    <header>
-      <h1>Pranav Pradhan</h1>
-      <h3>IT Prodigy</h3>
-      <div class="contact-info">
-        <p>pranavpradhan101@gmail.com</p>
-        <p>Calgary, AB</p>
+  <div class="intro">
+    <h1>Hi, I'm Pranav</h1>
+    <p>I'm a 13-year-old tech prodigy passionate about virtualization, OS installations, and disk partitioning. I've aspired to build a career in IT since I was 6. This blog is where I document my journey and projects.</p>
+  </div>
+
+  <div class="container">
+    <div class="left-grid">
+      <div class="section">
+        <h2>Age 9</h2>
+        <ul>
+          <li>Installed Kali Linux — my first OS install.</li>
+          <li>First VM created and used: Kali Linux using VirtualBox.</li>
+          <li>Performed dictionary attack on NAS using Hydra in Kali Linux.</li>
+        </ul>
       </div>
-    </header>
 
-    <section>
-      <h2>Education</h2>
-      <p>Jr. Highschool - 2022</p>
-    </section>
+      <div class="section">
+        <h2>Age 10</h2>
+        <ul>
+          <li>Created first Ubuntu VM.</li>
+          <li>Flashed BIOS on Acer Aspire 5750 using a USB drive.</li>
+        </ul>
+      </div>
 
-    <section>
-      <h2>Awards & Certifications</h2>
-      <p>Working towards CompTIA A+</p>
-    </section>
+      <div class="section">
+        <h2>Age 11</h2>
+        <ul>
+          <li>First dual boot: Windows 10 and Ubuntu with manual partitioning.</li>
+          <li>Used Hyper-V to create and manage virtual machines.</li>
+          <li>Configured a SOHO router and enabled MAC filtering.</li>
+          <li>Edited Windows 11 registry to bypass CPU restrictions and install it on a Sandy Bridge i3-2350M laptop.</li>
+          <li>Jailbroke iPad Mini on iOS 9.3.5.</li>
+          <li>Backed up and restored iPad Mini (iOS 9.3.5).</li>
+        </ul>
+      </div>
 
-    <section>
-      <h2>Skills</h2>
+      <div class="section">
+        <h2>Age 12</h2>
+        <ul>
+          <li>Set up RPiPlay on a Raspberry Pi 3 for screen mirroring, linked to Balena Cloud.</li>
+          <li>Backed up and restored Samsung Galaxy phone.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="right-vertical section">
+      <h2>Age 13</h2>
       <ul>
-        <li>VMware Workstation Pro</li>
-        <li>Oracle VirtualBox</li>
-        <li>Hyper-V</li>
-        <li>GNOME Boxes</li>
-        <li>Windows Disk Management</li>
-        <li>DISKPART</li>
-        <li>GNOME Disks</li>
-        <li>GParted</li>
-        <li>macOS Recovery</li>
-        <li>Balena Etcher</li>
-        <li>Pi Imager</li>
-        <li>Rufus</li>
-        <li>Windows XP to 11</li>
-        <li>Windows Server 2012</li>
-        <li>Ubuntu, Fedora, Debian, NixOS</li>
-        <li>macOS 10.9 and up</li>
-        <li>FreeBSD</li>
+        <li>Built a multi-boot system with Windows 10, Windows 11, Ubuntu, Fedora, and Kali Linux.</li>
+        <li>Configured Arch Linux entirely through terminal using Arch Wiki, fdisk, nano, vi, and networking commands.</li>
+        <li>Used VMware Workstation Pro, VMware Player, and GNOME Boxes.</li>
+        <li>Installed and explored ESXi.</li>
+        <li>Created a VM lab with 20+ virtual machines.</li>
+        <li>Cloned VMs, created snapshots, used NAT and bridged networking.</li>
+        <li>Worked with partition tools: DISKPART, GParted, Windows Disk Management, GNOME Disks, Minitool Partition Wizard.</li>
+        <li>Handled file systems: NTFS, FAT32, exFAT, APFS, EXT4, swap.</li>
+        <li>Recovered photos from a Windows laptop using recovery tools.</li>
+        <li>Reinstalled OSes, removed preinstalled apps.</li>
+        <li>Rescued Windows Recovery Environment (WinRE).</li>
+        <li>Set static IP on Arch Linux.</li>
+        <li>Explored Zenmap (network scanning).</li>
       </ul>
-    </section>
+    </div>
+  </div>
 
-    <section>
-      <h2>Profile</h2>
-      <p>
-        I’m 13 years old and deeply passionate about IT, virtualization, and systems architecture. I’ve been working
-        with virtual machines since I was 9, and by 13, I’ve mastered tools like Hyper-V, VMware, and VirtualBox. I’ve
-        built and managed complex multi-boot systems, troubleshooted real-world OS and partition issues, and helped
-        family and friends with tech support. I love learning how computers work at a deeper level—whether it’s fixing
-        bootloaders, customizing operating systems, or setting up secure and efficient environments. I’m working towards
-        becoming an IT Virtualization Architect and am currently preparing for the CompTIA A+ certification.
-      </p>
-    </section>
-
-    <section>
-      <h2>Projects</h2>
-      <ul class="projects">
-        <li><strong>Dictionary Attack against HTTP at 9</strong><br />
-          At the age of 9, I performed an attack only using Hydra and Text Editor on my NAS through a VM running Kali Linux
-        </li>
-        <li><strong>Edited Windows 11 Registry to run unsupported at 10</strong><br />
-          At the age of 11, I edited the registry to run Windows 11 on an i3-2350M Sandy Bridge
-        </li>
-        <li><strong>Flashed BIOS correctly using a USB Drive at 10</strong><br />
-          Loaded BIOS file onto USB drive followed instructions and reset CMOS
-        </li>
-        <li><strong>Configured a SOHO router at 11</strong><br />
-          Set SSID and password, and configured MAC filtering
-        </li>
-        <li><strong>Dual-booted Windows and Ubuntu at 11</strong><br />
-          Manually partitioned a disk to dual-boot
-        </li>
-        <li><strong>RPiPlay on a Raspberry Pi 3 for Screen Mirroring at 12</strong><br />
-          Used GitHub code to create an Apple TV like device linked to Balena Cloud
-        </li>
-        <li><strong>Multi-Boot system all in a VM at 13</strong><br />
-          Created a diverse system including Windows 10 and 11, Ubuntu, Fedora and Kali Linux
-        </li>
-        <li><strong>Configured Arch Linux all through the terminal at 13</strong><br />
-          Used tools like fdisk, networking commands and text editors nano, vim and vi with the help of Arch Wiki
-        </li>
-      </ul>
-
-    </section>
-
-    <footer>
-      Designed by Pranav Pradhan • HTML structure assistance by ChatGPT
-    </footer>
-  </main>
+  <footer>
+    <p>HTML structure by ChatGPT, design and content by Pranav.</p>
+  </footer>
 </body>
 </html>
