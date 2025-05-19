@@ -1,46 +1,141 @@
-<style>
-  body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    background-color: #f9f9f9;
-    color: #222;
-    line-height: 1.6;
-    display: flex;
-    justify-content: center;
-    min-height: 100vh;
-  }
-  main {
-    max-width: 900px;
-    padding: 20px;
-    background: white;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    margin: 40px 10px;
-  }
-  header, section {
-    margin-bottom: 2rem;
-  }
-  h1, h2 {
-    color: #004080;
-    border-bottom: 2px solid #004080;
-    padding-bottom: 5px;
-  }
-  ul {
-    list-style: none;
-    padding-left: 0;
-  }
-  ul li {
-    margin-bottom: 0.5rem;
-  }
-  .contact-info p {
-    margin: 0.2rem 0;
-  }
-  .projects li {
-    margin-bottom: 1rem;
-  }
-  @media (max-width: 600px) {
-    main {
-      margin: 20px 10px;
-      padding: 15px;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pranav Pradhan - IT Prodigy Resume</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background-color: #f9f9f9;
+      color: #222;
+      line-height: 1.6;
+      display: flex;
+      justify-content: center;
+      min-height: 100vh;
     }
-  }
-</style>
+    main {
+      max-width: 900px;
+      padding: 20px;
+      background: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      margin: 40px 10px;
+    }
+    header, section {
+      margin-bottom: 2rem;
+    }
+    h1, h2 {
+      color: #004080;
+      border-bottom: 2px solid #004080;
+      padding-bottom: 5px;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    ul li {
+      margin-bottom: 0.5rem;
+    }
+    .contact-info p {
+      margin: 0.2rem 0;
+    }
+    .projects li {
+      margin-bottom: 1rem;
+    }
+    @media (max-width: 600px) {
+      main {
+        margin: 20px 10px;
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Pranav Pradhan</h1>
+      <h3>IT Prodigy</h3>
+      <div class="contact-info">
+        <p>pranavpradhan101@gmail.com</p>
+        <p>Calgary, AB</p>
+      </div>
+    </header>
+
+    <section>
+      <h2>Education</h2>
+      <p>Jr. Highschool - 2022</p>
+    </section>
+
+    <section>
+      <h2>Awards & Certifications</h2>
+      <p>Working towards CompTIA A+</p>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <ul>
+        <li>VMware Workstation Pro</li>
+        <li>Oracle VirtualBox</li>
+        <li>Hyper-V</li>
+        <li>GNOME Boxes</li>
+        <li>Windows Disk Management</li>
+        <li>DISKPART</li>
+        <li>GNOME Disks</li>
+        <li>GParted</li>
+        <li>macOS Recovery</li>
+        <li>Balena Etcher</li>
+        <li>Pi Imager</li>
+        <li>Rufus</li>
+        <li>Windows XP to 11</li>
+        <li>Windows Server 2012</li>
+        <li>Ubuntu, Fedora, Debian, NixOS</li>
+        <li>macOS 10.9 and up</li>
+        <li>FreeBSD</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Profile</h2>
+      <p>
+        I’m 13 years old and deeply passionate about IT, virtualization, and systems architecture. I’ve been working
+        with virtual machines since I was 9, and by 13, I’ve mastered tools like Hyper-V, VMware, and VirtualBox. I’ve
+        built and managed complex multi-boot systems, troubleshooted real-world OS and partition issues, and helped
+        family and friends with tech support. I love learning how computers work at a deeper level—whether it’s fixing
+        bootloaders, customizing operating systems, or setting up secure and efficient environments. I’m working towards
+        becoming an IT Virtualization Architect and am currently preparing for the CompTIA A+ certification.
+      </p>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <ul class="projects">
+        <li><strong>Dictionary Attack against HTTP at 9</strong><br />
+          At the age of 9, I performed an attack only using Hydra and Text Editor on my NAS through a VM running Kali Linux
+        </li>
+        <li><strong>Edited Windows 11 Registry to run unsupported at 10</strong><br />
+          At the age of 11, I edited the registry to run Windows 11 on an i3-2350M Sandy Bridge
+        </li>
+        <li><strong>Flashed BIOS correctly using a USB Drive at 10</strong><br />
+          Loaded BIOS file onto USB drive followed instructions and reset CMOS
+        </li>
+        <li><strong>Configured a SOHO router at 11</strong><br />
+          Set SSID and password, and configured MAC filtering
+        </li>
+        <li><strong>Dual-booted Windows and Ubuntu at 11</strong><br />
+          Manually partitioned a disk to dual-boot
+        </li>
+        <li><strong>RPiPlay on a Raspberry Pi 3 for Screen Mirroring at 12</strong><br />
+          Used GitHub code to create an Apple TV like device linked to Balena Cloud
+        </li>
+        <li><strong>Multi-Boot system all in a VM at 13</strong><br />
+          Created a diverse system including Windows 10 and 11, Ubuntu, Fedora and Kali Linux
+        </li>
+        <li><strong>Configured Arch Linux all through the terminal at 13</strong><br />
+          Used tools like fdisk, networking commands and text editors nano, vim and vi with the help of Arch Wiki
+        </li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
