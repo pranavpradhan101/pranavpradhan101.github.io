@@ -6,10 +6,10 @@
   <title>Pranav Pradhan - IT Prodigy Resume</title>
   <style>
     body {
+      background-color: #000000;
+      color: #f0f0f0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
-      background-color: #f9f9f9;
-      color: #222;
       line-height: 1.6;
       display: flex;
       justify-content: center;
@@ -17,36 +17,66 @@
     }
     main {
       max-width: 900px;
-      padding: 20px;
-      background: white;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      padding: 30px 25px;
+      background: #121212;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
       margin: 40px 10px;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
     }
     header, section {
-      margin-bottom: 2rem;
+      margin-bottom: 2.5rem;
     }
     h1, h2 {
-      color: #004080;
-      border-bottom: 2px solid #004080;
-      padding-bottom: 5px;
+      color: #ffffff;
+      border-bottom: 2px solid #ffffff;
+      padding-bottom: 6px;
+      font-weight: 700;
+    }
+    h3 {
+      color: #cccccc;
+      margin-top: 0;
+      font-weight: 500;
     }
     ul {
       list-style: none;
       padding-left: 0;
     }
     ul li {
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.8rem;
+      transition: color 0.3s ease;
+    }
+    ul li:hover {
+      color: #dddddd;
+      cursor: default;
     }
     .contact-info p {
-      margin: 0.2rem 0;
+      margin: 0.3rem 0;
+      font-size: 1.05rem;
+      font-weight: 500;
     }
     .projects li {
-      margin-bottom: 1rem;
+      margin-bottom: 1.2rem;
+      font-size: 1rem;
+      line-height: 1.4;
+    }
+    p {
+      font-size: 1rem;
+      color: #e0e0e0;
+    }
+    footer {
+      margin-top: auto;
+      font-size: 0.9rem;
+      color: #777;
+      text-align: center;
+      padding-top: 20px;
+      border-top: 1px solid #333;
     }
     @media (max-width: 600px) {
       main {
         margin: 20px 10px;
-        padding: 15px;
+        padding: 20px 15px;
       }
     }
   </style>
@@ -135,7 +165,12 @@
           Used tools like fdisk, networking commands and text editors nano, vim and vi with the help of Arch Wiki
         </li>
       </ul>
+
     </section>
+
+    <footer>
+      Designed by Pranav Pradhan • HTML structure assistance by ChatGPT
+    </footer>
   </main>
 </body>
 </html>
