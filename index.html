@@ -14,6 +14,7 @@
       background-color: #000;
       color: #EEEEEE;
     }
+
     .container {
       max-width: 900px;
       margin: 0 auto;
@@ -22,57 +23,60 @@
       flex-direction: column;
       align-items: center;
     }
+
     .intro {
       background-color: #222;
       margin-bottom: 20px;
-      padding: 20px 20px 20px 40px; /* less left padding */
+      padding: 20px 20px 20px 40px;
       border-radius: 10px;
       text-align: center;
       width: 100%;
       box-sizing: border-box;
     }
+
     h1, h2, h3 {
       color: #EEEEEE;
       margin-top: 0;
     }
+
     .content-wrapper {
       display: flex;
       width: 100%;
       max-width: 900px;
       gap: 20px;
     }
+
+    /* Left side (ages 9-12) */
     .left-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      width: 40%;
       gap: 20px;
+      width: 35%; /* skinnier columns for left side */
     }
+
     .section {
       background-color: #222;
       padding: 20px;
       border-radius: 10px;
     }
+
     .section ul,
     .intro ul,
     .age13 ul {
-      padding-left: 20px; /* bullet points closer to left */
+      padding-left: 20px;
       margin-left: 0;
     }
-    .section.small {
-      grid-column: span 1;
-    }
-    .section.medium {
-      grid-column: span 2;
-    }
+
+    /* Age 13 section wider */
     .age13 {
       background-color: #222;
       padding: 20px;
       border-radius: 10px;
-      width: 600px;
+      width: 65%; /* wider than left side */
       display: flex;
       flex-direction: column;
-      justify-content: flex-start;
     }
+
     footer {
       text-align: center;
       margin-top: 40px;
@@ -84,30 +88,30 @@
     /* Mobile styles */
     @media (max-width: 600px) {
       .content-wrapper {
-        display: block; /* stack vertically */
+        display: block; 
         max-width: 100%;
       }
       .left-grid {
         display: block;
+        width: 100% !important;
       }
       .section.small,
       .section.medium,
       .age13 {
-        width: 100% !important; /* full width */
+        width: 100% !important; 
         margin-bottom: 20px;
         box-sizing: border-box;
       }
       .age13 {
         width: 100% !important;
       }
-      /* Center intro block and justify paragraph */
       .intro {
-        text-align: center; /* center the intro container */
+        text-align: center;
         padding-left: 20px;
         padding-right: 20px;
       }
       .intro p {
-        text-align: justify; /* justify paragraph text inside intro */
+        text-align: justify;
         max-width: 600px;
         margin-left: auto;
         margin-right: auto;
@@ -119,7 +123,7 @@
   <div class="container">
     <div class="intro">
       <h1>Hi, I'm Pranav</h1>
-      <p>I'm a 14-year-old tech-savvy guy passionate about virtualization, OS installations, and disk partitioning. When I was 7, my dad used to fix computers for a living. One day, he brought home a Dell Business laptop, and he let me play with it. I noticed it was a bit slow, so I visited a shady tech support website, chatted with an agent, and asked if anything could be done. He then told me that he could fix it and would need to control the computer. I thought nothing of it and agreed. My mouse then suddenly started moving on its own, and I started panicking. I thought about closing the open windows, but instead I slammed the computer lid shut, my head spinning with possibilities. What's next? What do I do? This encounter exposed me to real world social engineering and malware, fueling my lifelong curiosity about safety and technology, and how it works at a deeper level. Since then, I began experimenting with operating systems, virtual machines and other tools, building my skillset.This blog is where I document my journey and projects. View my resume <a href="https://www.canva.com/design/DAGnMsNWqhQ/lBoHjw_qr06UPrOnMv-n5A/view?utm_content=DAGnMsNWqhQ&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h48405d7ac1" target="_blank" rel="noopener noreferrer">here.</a></p>
+      <p>I'm a 14-year-old tech-savvy guy passionate about virtualization, OS installations, and disk partitioning. When I was 7, my dad used to fix computers for a living. One day, he brought home a Dell Business laptop, and he let me play with it. I noticed it was a bit slow, so I visited a shady tech support website, chatted with an agent, and asked if anything could be done. He then told me that he could fix it and would need to control the computer. I thought nothing of it and agreed. My mouse then suddenly started moving on its own, and I started panicking. I thought about closing the open windows, but instead I slammed the computer lid shut, my head spinning with possibilities. What's next? What do I do? This encounter exposed me to real world social engineering and malware, fueling my lifelong curiosity about safety and technology, and how it works at a deeper level. Since then, I began experimenting with operating systems, virtual machines and other tools, building my skillset. This blog is where I document my journey and projects. View my resume <a href="https://www.canva.com/design/DAGnMsNWqhQ/lBoHjw_qr06UPrOnMv-n5A/view?utm_content=DAGnMsNWqhQ&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h48405d7ac1" target="_blank" rel="noopener noreferrer">here.</a></p>
     </div>
 
     <div class="content-wrapper">
@@ -185,7 +189,7 @@
           <li>Configured Arch Linux entirely through CLI using Arch Wiki with tools like fdisk, nano, vi, and networking commands with help.</li>
           <li>Set static IP on Arch Linux.</li>
           <li>Worked with partition tools: GParted, Minitool Partition Wizard.</li>
-          <li>In assisting others, I reinstalled OSes and removed troublesome apps.</li>
+          <li>Assisted others by reinstalling OSes and troubleshooting apps.</li>
           <li>Added Windows Recovery Environment (WinRE) to partition.</li>
           <li>Installed, explored and configured VMware ESXi 8.0 U3e.</li>
           <li>Successfully created a triple nested VM.</li>
